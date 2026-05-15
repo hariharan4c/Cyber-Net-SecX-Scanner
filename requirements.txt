@@ -1,0 +1,6 @@
+matplotlib
+reportlab
+requests
+pymetasploit3
+pyfiglet
+python-nmap
