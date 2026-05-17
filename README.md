@@ -1,77 +1,149 @@
+# Cyber-Net-SecX Scanner
 
 <p align="center">
   <img src="auto_pentest_scanner/static/assets/logo_header.png">
 </p>
+
 <p align="center">
   <img src="auto_pentest_scanner/static/assets/image.png">
 </p>
 
+---
 
+## About
 
+Cyber-Net-SecX Scanner is an Automated Network Penetration Testing and Vulnerability Assessment Tool developed using Python, Nmap, and Metasploit RPC.
 
+The tool helps security professionals automate:
 
-OS :
-----
-Kali linux or Linux OS
+- Network Reconnaissance
+- Port Scanning
+- Service Enumeration
+- Vulnerability Assessment
+- Exploit Intelligence
+- Risk Analysis
+- Automated PDF Report Generation
 
-Pre requirments:
-----------------
+---
 
-step 1: Install all modules
+## Features
 
-step 2: start Metasploit rpc 
+- Automated Reconnaissance
+- Nmap Integration
+- Metasploit RPC Integration
+- CVSS-based Risk Analysis
+- Vulnerability Severity Charts
+- Automated PDF Reporting
+- Python Modular Architecture
+- Kali Linux Support
 
-Note :
+---
 
-   ( 123 is my linux password 
-        - change the password according to yours
-		- also change the password filed in the metasploit RPC module )
-		
-	    msfrpcd -P 123 -S
+## OS Support
 
-step 3: Open auto_pentest_scanner folder start execution
+- Kali Linux
+- Ubuntu Linux
+- Other Debian-based Linux distributions
 
-##########################################################################
+---
 
-Virtual Environmment : 
-----------------------
+# Installation
 
-step 1: install virtual environment
+## Step 1 — Clone Repository
 
-	    sudo apt install python3-venv -y
-		
-step 2: create venv
+```bash
+git clone https://github.com/hariharan4c/Cyber-Net-SecX-Scanner.git
+cd Cyber-Net-SecX-Scanner
 
-	    python3 -m venv venv
-step 3: activate venv
+---
 
-	    source venv/bin/activate
+## Step 2 — Create Virtual Environment
 
-##########################################################################
+```bash
+sudo apt install python3-venv -y
+python3 -m venv venv
+source venv/bin/activate
+```
 
-Installation : 
---------------
+---
 
-step 1: install nmap
+## Step 3 — Install Nmap
 
-    	sudo apt install namp -y
-		
-	    pip install python-nmap
+```bash
+sudo apt install nmap -y
+pip install python-nmap
+```
 
-step 2: install modules
+---
 
-	    pip install matplotlib reportLab requests pymetasploit3 pyfiglet
-		
-  
-##########################################################################
+## Step 4 — Install Required Python Modules
 
-Tool Execution:
----------------
+```bash
+pip install matplotlib reportlab requests pymetasploit3 pyfiglet
+```
 
-step 1 : enter the of the person perform assessment
+---
 
-step 2 : enter the ip address to be scanned
+## Step 5 — Start Metasploit RPC
 
-step 3 : enter the ports to be scanned
+```bash
+msfrpcd -P 123 -S
+```
 
-##########################################################################
+> NOTE:
+> Change the RPC password according to your environment configuration.
+
+---
+
+# Tool Execution
+
+Run the scanner:
+
+```bash
+cd auto_pentest_scanner
+python3 run_full_scan.py
+```
+
+---
+
+# Workflow
+
+1. Enter Assessor Name
+2. Enter Target IP Address
+3. Enter Port Range
+4. Reconnaissance Starts
+5. Vulnerability Assessment
+6. Risk Analysis
+7. Severity Chart Generation
+8. PDF Report Generation
+
+---
+
+# Technologies Used
+
+- Python
+- Nmap
+- Metasploit Framework
+- ReportLab
+- Matplotlib
+- Linux
+
+---
+
+# Developed By
+
+Hariharan C
+
+GitHub:
+https://github.com/hariharan4c
+
+LinkedIn:
+https://www.linkedin.com/in/hariharan-c-28730a300
+
+---
+
+# Disclaimer
+
+This project is developed strictly for educational and authorized security testing purposes only.
+
+Unauthorized scanning or exploitation of systems without permission is illegal.
